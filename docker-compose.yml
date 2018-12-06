@@ -1,0 +1,10 @@
+version: "3.2"
+services:
+    app:
+        build: .
+        ports:
+            - 8080:3000
+        environment:
+            AMQP_URL: amqp_url
+            QUERY_NAME: query_name
+            NODE_ENV: production

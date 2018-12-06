@@ -1,0 +1,11 @@
+version: "3.2"
+services:
+    app:
+        build: .
+        volumes:
+            - ./:/var/www
+        command: "npm run dev"
+        environment:
+            AMQP_URL: amqp_url
+            QUERY_NAME: query_name
+            NODE_ENV: development
