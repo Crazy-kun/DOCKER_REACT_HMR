@@ -11,7 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, "public"),
         filename: "js/[name].bundle.js",
     },
-    devtool: "cheap-module-eval-source-map",
+    devtool: "eval-source-map",
     resolve: {
         extensions: [".js", ".jsx", ".json", ".ts", ".tsx", ".css"]
     },
