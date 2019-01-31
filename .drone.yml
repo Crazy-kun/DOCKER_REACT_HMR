@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+
+steps:
+- name: test
+  image: node:8.9.4-alpine
+  commands:
+  - npm install
+  - npm run build
+  - npm run start
